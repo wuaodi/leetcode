@@ -20,7 +20,7 @@ k 个数字的 平均值 为这些数字求和后再除以 k 。
 
 class Solution:
     def missingRolls(self, rolls: List[int], mean: int, n: int) -> List[int]:
-         = mean * (n+len(rolls))
+        add_all = mean * (n+len(rolls))
         # 所有值取最大，依然小于总和，不符合条件
         if (sum(rolls) + n*6) < add_all:
             return []
